@@ -92,14 +92,18 @@
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
     <Button
-        android:textSize="16sp"
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/shape_btn"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_btn_login_register"
         android:text="Đăng Nhập"
         android:textAllCaps="false"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/Login_SMS"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/forgotPassword"
@@ -132,7 +136,9 @@
     </LinearLayout>
 
     <Button
-        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_google_svgrepo_com"
+        android:padding="10dp"
+        android:textSize="12sp"
         android:textAllCaps="false"
         android:background="@drawable/shape_btn"
         android:id="@+id/btnGoogle"
@@ -141,16 +147,19 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="Google"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintTop_toTopOf="@+id/btnFacebook" />
 
     <Button
-        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_facebook_svgrepo_com"
+        android:padding="10dp"
+        android:textSize="12sp"
         android:textAllCaps="false"
-        android:background="@drawable/shape_btn"
-        android:id="@+id/button5"
+        android:background="@drawable/shape_btnfacebook"
+        android:id="@+id/btnFacebook"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -158,27 +167,31 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Facebook"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/btnInstagram"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnGoogle"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.19999999" />
 
     <Button
-        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_instagram_svgrepo_com"
+        android:padding="10dp"
+        android:textSize="12sp"
         android:textAllCaps="false"
-        android:background="@drawable/shape_btn"
-        android:id="@+id/button6"
+        android:background="@drawable/shape_btn_instagram"
+        android:id="@+id/btnInstagram"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Instagram"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFacebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/btnFacebook" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
